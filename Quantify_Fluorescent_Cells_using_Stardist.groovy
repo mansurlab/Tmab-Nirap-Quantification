@@ -1,18 +1,14 @@
 /******************************************************
-* Quantify Fluorescent Cells using Stardist
-*
-* This code utilizes the Stardist algorithm to detect and quantify fluorescent cells in an image. It requires QuPath software and the Stardist model file.
-* The code detects cells based on a prediction threshold, applies normalization and resolution settings, and measures shape and intensity of the cells.
-* It then applies a size and intensity threshold to filter the detected cells and classifies them as "Positive."
-* The code also calculates the percentage of the image area occupied by the positive cells.
-* Finally, it exports the measurements to a TSV file and changes the color of the positive cells.
-*
+ Quantify Fluorescent Cells using Stardist
+
+ This code utilizes the Stardist algorithm to detect and quantify fluorescent cells in an image. It requires QuPath software and the Stardist model file.
+ The code detects cells based on a prediction threshold, applies normalization and resolution settings, and measures shape and intensity of the cells.
+ It then applies a size and intensity threshold to filter the detected cells and classifies them as "Positive."
+ The code also calculates the percentage of the image area occupied by the positive cells.
+ Finally, it exports the measurements to a TSV file and changes the color of the positive cells.
+
 * Required libraries:
 * - qupath.ext.stardist.StarDist2D
-* - qupath.lib.gui.tools.MeasurementExporter
-* - qupath.lib.gui.measure.ObservableMeasurementTableData
-* - qupath.lib.objects.PathAnnotationObject
-* - qupath.lib.objects.PathCellObject
 ******************************************************/
 
 import qupath.ext.stardist.StarDist2D
