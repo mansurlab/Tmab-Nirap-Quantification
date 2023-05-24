@@ -1,22 +1,22 @@
-
 // CHANGE IMAGE TYPE
-/* ------------------------------------------------------------------------------------------------------
+/* 
    This code allows you to easily change the image type for further processing. 
    You can choose from the following options: 'BRIGHTFIELD_H_DAB', 'BRIGHTFIELD_H_E', and 'FLUORESCENCE'. 
    Simply update the parameter inside the setImageType() function to the desired image type.
 */
 setImageType('BRIGHTFIELD_H_DAB');
 
+
+
 /* ------------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------------------- */
 // Clear previous detections and select annotations
 clearDetections();
 selectAnnotations();
+
+
+
 /* ------------------------------------------------------------------------------------------------------
-|
-|
-|
-*/ Selecting whole image as annotation
+Selecting whole image as annotation
 createSelectAllObject(true)
 selectAnnotations();
 
